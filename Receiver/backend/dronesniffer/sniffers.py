@@ -175,7 +175,7 @@ class SniffManager:
         # remove existing sniffer for that interface
         self.stop(interface)
         print("Gonna setup WiFiInterfaceSniffer")
-        sniffer = WiFiInterfaceSniffer(interface)
+        sniffer = WiFiInterfaceSniffer("wlan1")
         print("Success in setting WiFI Interface Sniffer")
         success = sniffer.start()
         if success:
